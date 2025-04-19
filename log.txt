@@ -1,0 +1,6 @@
+**THIS IS WHERE ACTIVITIES GET LOGGED**
+2025-04-19T08:30:00.583Z - GET /todos
+2025-04-19T08:30:15.296Z - GET /todos/3 - Fetched todo ID 3
+2025-04-19T08:30:37.044Z - POST /todos - Created todo ID 21
+2025-04-19T08:31:04.470Z - PUT /todos/2 - Updated todo ID 2
+2025-04-19T08:31:34.420Z - DELETE /todos/2 - Deleted todo ID 2

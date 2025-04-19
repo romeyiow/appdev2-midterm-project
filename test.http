@@ -1,0 +1,73 @@
+###=========TESTS FOR VALID API ENDPOINTS (HAPPY PATH)=========###
+
+### 1. GET all todos
+GET http://0.0.0.0:3000/todos 
+
+### 2. GET specific todos
+GET http://0.0.0.0:3000/todos/3 
+
+###
+GET http://0.0.0.0:3000/todos/999  
+
+### 3. POST specific todo
+### 3.1 POST with all fields
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "title": "A new todo",
+    "completed": true
+}
+### 3.2 POST with title only 
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "title": "New Todo"
+}
+
+### 4.PUT or UPDATE specific todo
+PUT http://localhost:3000/todos/2
+Content-Type: application/json
+
+{
+    "title": "Updated Todo",
+    "completed": false
+}
+
+### DELETE specific todo
+DELETE http://localhost:3000/todos/2
+
+
+###=========TESTS FOR INVALID API ENDPOINTS AND CLIENT-SIDE MISTAKES=========###
+### 1. Invalid endpoint or route
+GET http://0.0.0.0:3000/kudos
+
+
+### 2. Invalid method with valid url
+PATCH http://0.0.0.0:3000/todos
+
+### 3. Invalid method with invalid url
+PATCH http://0.0.0.0:3000/kudos
+
+### 4. Fetching todos with invalid ID
+### 4.1 ID of Zero
+GET http://0.0.0.0:3000/todos/0 
+### 4.2 Non-numerical ID
+GET http://0.0.0.0:3000/todos/abc
+### 4.3 Alpahanumerical ID
+GET http://0.0.0.0:3000/todos/1ab2c
+### 4.4 No given ID
+GET http://0.0.0.0:3000/todos/
+### 4.5 ID with decimal
+GET http://0.0.0.0:3000/todos/1.0
+### 4.6 ID with leading zero(es)
+GET http://0.0.0.0:3000/todos/001
+
+### 5. POST without required fields
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "completed": "false"
+}
