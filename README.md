@@ -66,7 +66,7 @@ This video will guide you step-by-step through the process of using the API, mak
 
 # About Me
 Hi! My name is Jerome Imperial and my friends call me Jers :> ...
-I'm an INFJ-T who's passion is playing chess, soccer, and guitar. I'm not exactly into coding but I found meaning in life solving problems especially those that could help the neglected people of the Philippines. For that reason, I value my knowledge in coding because solving problems with IT is a common trend this days.     
+I'm an INFJ-T whose passion is playing chess, soccer, and guitar. I'm not exactly into coding but I found meaning in life solving problems especially those that could help the neglected people of the Philippines. For that reason, I value my knowledge in coding because solving problems with IT is a common trend this days.     
 
 ## Skills
 - Web Dev (MERN Stack)
